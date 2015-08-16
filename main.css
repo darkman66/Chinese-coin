@@ -1,0 +1,90 @@
+body { margin: 0px; background: url(img/lgrey091.gif) repeat; width: 100%; overflow-x: hide;}
+footer { padding-left: 20px; font-family: Arial; }
+#top { height: 45px; background: #222; color:#aaa; padding-top: 15px; padding-left: 15px; width: 1024px; }
+#divMain { width:100%; }
+.c {
+display:-webkit-box;
+-webkit-box-orient:horizontal;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+}
+
+button {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 16px;
+    height: 37px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #444;
+}
+.p10 { padding: 10px; }
+.p10t { padding-top: 10px; }
+.p20t { padding-top: 20px; }
+.p20l { padding-left: 20px; }
+
+#card { margin-left:20px; width:175px; height: 375px; border: 1px #444 solid; background: #fff; float: left;}
+#sugest { margin-left: 20px; width:655px; height: 375px; border: 1px #444 solid; background: #fff; float: left;}
+#score { margin-left: 20px; width:75px; height: 375px; border: 0px; float: left; color:#444; font-size: 18px; font-family: arial:}
+#game { width: 1024px; }
+
+.clear { clear: both; }
+.b1 {
+    background: #33FF00; 
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 16px;
+    height: 37px;
+    line-height: 27px;
+    min-width: 54px;
+    outline: 0;
+    padding: 0 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #444;
+    margin-right:40px;
+}
+
+.fr { float: right; }
+.fl { float: left; }
+
+#info { display: none;
+padding:20px;
+position: absolute;
+width:720px;
+height: 310px;
+top: 110px;
+left: 120px;
+background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+border: 1px #666 solid;
+font-family: Arial;
+}
+
+#footer { position: absolute; top:540px; left: 910px; width:700px; height: 50px; padding: 0px;}
+#ans_ok { font-family: arial; font-size: 24px; color: #00ff00; }
+#ans_err { font-family: arial; font-size: 24px; color: #ff0000; }
+
+.b2 {
+    background: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px #666 solid;
+}
+
+#q { font-family: Arial; display: none;}

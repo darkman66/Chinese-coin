@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" " http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitiona l.dtd ">
+<!-- The new doctype -->
+<html xmlns=" http://www.w3.org/1999/xhtml "> 
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0">
+<!--
+ * Copyright 2011 Hubert Piotrowski info@hackberry.pl
+ *
+--!>
+    <meta name="viewport" content="width=device-width; height=device-height; user-scalable=0; initial-scale=1.0; maximum-scale=1.0"/> 
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="x-blackberry-defaultHoverEffect" content="true" /> 
+    <title>Chinese Coin 1.0</title>
+    <link type="text/css" rel="stylesheet" href="main.css" /> 
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body id="mainbody" onload="loadConfig();"  marginwidth="0" >
+<div id="footer"><img src="img/Twitter_48x48.png" border="0" onClick="openTwitter();" /></div>
+
+<div id="info">
+    <div class="fl"><img src="icon.jpg" border="0"></div>
+    <div class="fl" style="width: 430px; padding-left: 10px;">This app will help you to memorize chinese characters. Characters used in this application are taken from HSK Level 1. So they are pretty basic characters.<br/>
+    After memorizing characters from this level you can get into lessons which about to help you understand how to write characters from this application<br/><br/>
+    Please follow me on twitter: #hackberry_pl to get more details about next release.
+    </div>
+    <div class="clear"></div>
+    <div class="c"><button onClick="$('#info').fadeOut();">close</button></div>
+
+</div>
+
+<div id="top">
+    <div class="fl">Chinse Coin 1.0 </div>
+    <div class="fr"><button class="b1" onClick="$('#info').fadeIn();">Help</button></div>
+    <div class="clear"></div>
+</div>
+
+<div id="divMain">
+<div id="progressBar">
+    <br/>
+    <div id="progressBarBackground"><div id="progress"></div></div>
+    <br/>
+</div>
+
+<div class="c"><img src="img/chinese_symbols.png" border="0" ></div>
+<div class="c p20t">Welcome to Chinese Coin</div>
+<div class="c p10t"><button id="go1" onClick="$('#divMain').slideUp(); $('#game').fadeIn(); $('#game').slideDown(); getChars();">Continue</button></div>
+
+</div>
+
+
+<div id="game" class="p20t" style="display:none;">
+    <div id="card">
+        <div class="p10">
+        <h4>Please choose what the meaning of the shown characters</h4>
+        <div id="card_html"></div>
+        <div class="p10t c"><button onClick="goGadget()">Select</button></div>
+        </div>
+    </div>
+    <div id="sugest">
+        <div class="c" id="ch"></div>
+        <div class="c" id="pin"></div>
+    </div>
+    <div id="score">
+
+        <h3>Correct</h3>
+        <div id="ans_ok" class="p10t c b2">0</div>
+        
+        <h3>Mistakes</h3>
+        <div id="ans_err" class="p10t c b2">0</div>
+
+        <h3>Remain</h3>
+        <div id="ans_remain" class="p10t c b2">0</div>
+
+    </div>
+    <div class="clear"></div>
+
+    <div class="p20t c" id="q">
+        <div style="width:420px;" class="b2 p10 c">
+            <div class="p10t" style="width:180px;">Want to try again?</div>
+            <div  style="width:190px;"><button onClick="$('#q').fadeOut(); loadConfig();">Yes, try again</button></div>
+        <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
